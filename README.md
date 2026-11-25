@@ -59,6 +59,18 @@ DSH 自带 `@` 会话引用（`@deepseek-ai/dsh-session-reference`），但它�
 
 ## 安装
 
+npm（推荐）：
+
+```powershell
+pnpm dsh plugin --profile <profile> add dsh-session-digest
+```
+
+GitHub 源：
+
+```powershell
+pnpm dsh plugin --profile <profile> add github:dengwei84/dsh-session-digest
+```
+
 本地目录（开发中）：
 
 ```powershell
@@ -80,3 +92,7 @@ node --test test/session-digest.test.mjs
 ```
 
 覆盖（7 个用例）：只投影用户/助手文本并丢弃注入上下文、保留压缩检查点、整体预算裁剪与 Opening request、单条超长裁剪、`scope=full` 读到压缩前内容、空会话提示、列表过滤/排序/标题/自身标记、缺 id 与读取失败的报错。
+
+## License
+
+MIT © dengwei84
