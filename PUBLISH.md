@@ -1,4 +1,4 @@
-# 发布与维护（dsh-session-digest）
+﻿# 发布与维护（dsh-session-digest）
 
 ## 状态
 
@@ -7,7 +7,7 @@
 | GitHub 仓库 | https://github.com/dengwei84/dsh-session-digest （Public，`dsh-plugin` topic） |
 | npm | `dsh-session-digest@0.1.0`（2026-11-25 发布；首次发布后 registry 会先出现 `0.0.0-stage` 占位，约 20 分钟转为正式版本） |
 | 市场条目 PR | [#18721](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/18721)（open；仓库创建不满 1 天时 gate 失败，满 1 天后自动重跑；合并后 nightly 探测到 npm 包并写入目录与索引） |
-| 本机 profile | desktop profile 已装 0.1.0（本地目录链接） |
+| 本机 profile | desktop profile 已改装 npm 包 `dsh-session-digest@0.1.0`（2026-11-25），不再指向本地目录 |
 
 市场收录规则、gate 行为、`npm` 映射的来源，与 `dsh-workspace-tidy` 相同，见
 `../dsh-workspace-tidy/PUBLISH.md`。要点：
@@ -53,3 +53,4 @@ pnpm dsh plugin --profile desktop add dsh-session-digest@<version>
 
 - 不要把 npm token 写进仓库任何文件；发布用的 token 建议设置有效期，用完在 npmjs.com 吊销。
 - npm 正在收紧「bypass 2FA token」的权限，长期方案是 trusted publishing（GitHub Actions OIDC）；迁移后本地不再需要 token。
+
