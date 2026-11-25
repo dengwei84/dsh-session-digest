@@ -1,0 +1,42 @@
+{
+  "name": "dsh-session-digest",
+  "version": "0.1.0",
+  "description": "Read another DSH session's conversation (any workspace) as a compact, structured digest.",
+  "license": "MIT",
+  "author": "dengwei84",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "session",
+    "digest",
+    "context"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-0 <0.3.0-0"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test test/session-digest.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dengwei84/dsh-session-digest.git"
+  },
+  "homepage": "https://github.com/dengwei84/dsh-session-digest#readme",
+  "bugs": {
+    "url": "https://github.com/dengwei84/dsh-session-digest/issues"
+  }
+}
